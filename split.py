@@ -25,3 +25,6 @@ for i in range(len(b)):
 print('\n변환후 갯수')
 print(len(b))
 print(len(b[0]))
+
+
+
