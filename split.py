@@ -1,30 +1,39 @@
 a='곽병찬,1,2|이연주,3,4|곽지성,5,6|곽채윤,7,8'
-print('\n원문 그대로')
-print("a:{0}".format(a))
 
-print('\n바깥쪽 리스트 split')
+print('\n')
+print('+ 원문 그대로')
+print("  - a:{0}".format(a))
+
+print()
+print('+ a split.')
 b = a.split('|')
-print("b:{0}".format(b))
+print("  - b:{0}".format(b))
 
+print()
+print('+ b split. 다른변수 대입')
+c = list()
+d = list()
 for i in range(len(b)):
-    print("\nb[{0}]:{1}".format(i,b[i]))
-    c = b[i].split(',')
-    for j in range(len(c)):
-        print("     c[{0}]:{1}".format(j,c[j]),end=' ')
+    c.append(b[i].split(','))
+    d.extend(b[i].split(','))
+print("  - b:{0}".format(b))
+print("  - c append:{0}".format(c))
+print("  - d extend:{0}".format(d))
 
-print('\n변환전 갯수')
-print(len(b))
-print(len(b[0]))
+print()
+print('+ b 덮어쓰기 전 갯수')
+print("  - b:{0}".format(b))
+print('  - b    의 길이: {0}'.format(len(b)))
+print('  - b[0] 의 길이: {0}'.format(len(b[0])))
 
-print('\n안쪽 리스트 split')
+print()
+print('+ b split. 덮어쓰기')
 for i in range(len(b)):
-    print("b[{0}]:{1}".format(i,b[i]))
     b[i] = b[i].split(',')
-    print("b[{0}]:{1}".format(i,b[i]))
 
-print('\n변환후 갯수')
-print(len(b))
-print(len(b[0]))
-
-
+print()
+print('+ b 덮어쓰기 후 갯수')
+print("  - b:{0}".format(b))
+print('  - b    의 길이: {0}'.format(len(b)))
+print('  - b[0] 의 길이: {0}'.format(len(b[0])))
 
