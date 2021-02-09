@@ -1,0 +1,31 @@
+Dear Graduate Admissions Committee,
+
+As the Chief Technology Officer of Korea Securities Depository (KSD) and an individual who
+has been watching Mr. Seungjoon Kim for more than ten years, it is my great pleasure and honor
+to recommend Mr. Kim to your graduate program. KSD chose him for the full-time Master's Degree
+sponsorship because the company recognized his remarkable contribution, and he will distinctly
+improve KSD in the future.
+
+First of all, his prominent understanding of business and development of IT systems is invaluable. He is the chief software engineer of an international securities system, the most
+extensive and rapidly changing business in our company. After he took on the job, the transaction amount recorded $96 billion in 2017, which is ten times more than $9 billion in 2009. This is
+because he has successfully carried out IT projects so that he can accommodate a variety of industry changes and new businesses. In addition to this, his specific goals for implementing
+artificial intelligence into our company, which he showed in his sponsorship application, moved the judges, including myself.
+
+Most importantly, he is a self-motivated individual. He has performed several seminars on various topics including academic, business, and technology. For example, in the recent workshop
+on the analysis of the blockchain's cutting-edge technology and its influence on our company, which he conducted as the main speaker, his academic passion and astonishing analytical ability
+have been confirmed. Although many colleagues have been interested in the blockchain, its association with our company having been described in various articles, no one has a deep
+understanding of it because of the technical difficulties and complexity. However, he has voluntarily studied and participated in related conferences, and presented a workshop on it. By
+presenting a recent case of the blockchain implementation on distributed ledger technology, he has shown a strikingly deep understanding of the theory as well as how to convey his ideas to 
+others. In QA time, he was able to answer questions that seemed a little distant from the topic without interruption, and later he sent out an email with a detailed explanation.
+
+Although not directly responsible, he has promoted the development of the entire company by sharing his programs, scripts, and methodologies to streamline IT development. These things,
+such as the multi log-gathering utility which accelerates debugging by unifying distributed logs, are now an integral part of our company, and are still actively in use today. I am confident that this is proof of his in-depth knowledge of computer science and endless eagerness to gain new technologies.
+
+I guarantee that he has an outstanding work capacity, initiative, and academic passion. So I certainly recommend him for further education at your university, where he would become
+equipped with strong theoretical IT knowledge. If you have any questions I can answer about Mr.Kim's exceptional record with our company, please do not hesitate to contact me. I am already
+expecting what innovations he will bring back after his triumphant return from school.
+
+Sincerely yours,
+In Joo Kim,
+CTO,
+Korea Securities Depository
