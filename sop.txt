@@ -11,3 +11,13 @@ In recognition of my contribution so far, I was selected as a fully funded emplo
 I strongly believe that I am a well-prepared candidate for my MS in terms of my strong motivation, firm background and solid experiences, and clear vision. After successfully completing my MS at the PennState University, I will return to KSD to help establish the company's security policy and help operate the public service with enhanced information protection.
 
 Thank you very much for your time and attention.
+
+
+
+
+In recognition of my contribution so far, I was selected as a fully funded employee to earn a master's degree at Penn State University. The reason why KSD sends me to PennState University is clear. Be an expert in in information security and contribute to KSD. KSD provides two services to the public: E-VOTE, Internet shareholder voting service, and the other is CROWD FOUND, a public funding system. Both systems are public services and the KSD is also planning to strengthen its mobile services. Until now, KSD has not had many services for individuals, so the weak point is web and mobile security. I am eager to work with professor Dr. Patrick Daniel, who is very well known in the security field for his contributions, because I think  his research on 'Smartphone application security' could teach many lessons about KSD's future mobile services. I also realized that I need to acquire more up-to-date knowledge to expand KSD's service. Therefore, I want to develop myself more professionally and academically through Penn State University.
+
+
+My desire to expand my knowledge and my passion to solve the problems facing the industry have motivated me to pursue Master degree in PennState University of Computer Science and Engineering. I think my educational background and work experience have given me the qualities I need to meet the rigors of this demanding course. I bring along with me a strong grasp of fundamentals in computer science, along with a desire to learn,  and a zest for challenges.
+
+I have been working for Korea Securities Depository (KSD) since 2007; for my remarkable achievement, KSD will fully sponsor and financially support me while I pursue my MS degree. I would like to improve my security knowledge and related skills. Especially, I want to focus on applications of information protection in web service and mobile application environment. Since there is a huge amount of personal information in KSD, and a small mistake can lead to a big risk. In this Statement of Purpose, I would like to highlight my motivation and qualifications based on my solid background and work experience, and my MS research plans.
