@@ -17,8 +17,8 @@ for i in range(len(b)):
     c.append(b[i].split(','))
     d.extend(b[i].split(','))
 print("  - b:{0}".format(b))
-print("  - c append:{0}".format(c))
-print("  - d extend:{0}".format(d))
+print("  - c.append(b[i].split(','):{0}".format(c))
+print("  - d.extend(b[i].split(','):{0}".format(d))
 
 print()
 print('+ b 덮어쓰기 전 갯수')
