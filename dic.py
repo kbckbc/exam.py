@@ -1,33 +1,40 @@
 print('dic 는 키:값 자료 구조임')
 print('키는 숫자 문자 모두 가능하나 변경 불가능이어야 함')
-print()
 
 my_dict = {'한국':60, '일본':40, '중국':50}
-print('my_dict :', my_dict)
-print("my_dict['한국']:", my_dict['한국'])
 
-print('dic에 바로 추가 가능')
+print('\nmy_dict :', my_dict)
+
+print("\nmy_dict['한국']:", my_dict['한국'])
+
+print('\ndic에 추가')
+print("my_dict['베트남'] = 30")
 my_dict['베트남'] = 30
 print('my_dict :', my_dict)
 
-print('다음과 같이 순환조회 가능')
-print('\nitems()')
+print('\ndic에 value 변경')
+print("my_dict['한국'] = 70")
+my_dict['한국'] = 70
+print('my_dict :', my_dict)
+
+print('\n다음과 같이 순환조회 가능')
+print('my_dict.items(): ', end='')
 for k, v in my_dict.items():
-    print(k,v, end = ' ')
+    print('[',k,v, ']',end = ',')
 print()
 
-print('\nvalues()')
+print('my_dict.values(): ', end='')
 for v in my_dict.values():
-    print(v, end = ' ')
+    print(v, end = ',')
 print()
 
-print('\nkeys()')
+print('my_dict.keys(): ', end='')
 for k in my_dict.keys():
-    print(k, end = ' ')
+    print(k, end = ',')
 print()
 
 
-print('키워드 분석')
+print('\n키워드 분석')
 s = 'a,b,c,d,e,f,a,s,d,h,y,u,g,d,e,h,d,x,f,w,g,u,w,u'
 s = s.split(',')
 count1= {} # 결과 저장할 맵 정의

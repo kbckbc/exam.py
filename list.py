@@ -33,7 +33,7 @@ print()
 
 print('reverse는 list 순서 뒤집기. 역정렬아님')
 print('sort는 list 정렬')
-print('index는 list 안에서 검색')
+print('index는 list 안에서 search')
 print('마지막 요소에 접근은 -1 활용. 쓰기전에 list 있는지 부터 체크')
 print('min, max, sum 함수 사용 가능. list 메쏘드 아님주의!')
 print('del은 list 원하는곳 지우기. del 은 list 메쏘드 아님 주의!')
@@ -43,10 +43,10 @@ b = [3,2,4,1,5]
 print("\nb:",b)
 
 b.reverse()
-print("b reverse:",b)
+print("after b.reverse:",b)
 
 b.sort()
-print("b sort:",b)
+print("after b.sort:",b)
 
 
 if not b:
@@ -57,16 +57,22 @@ elif b:
 if b: # 리스트가 있다면. 
     print("b b[-1]:",b[-1])
 
-print("b index(1):",b.index(1))
-print("b index(5):",b.index(5))
+try:
+    print("b index(1):",b.index(1))
+    print("b index(5):",b.index(5))
+    print("b index(6):",b.index(6))
+except Exception as inst:
+    print('>> Unexpected Exception <<')
+    print(type(inst))
+    print(inst)
 
 print("b min{0}, max{1}, sum{2}:",min(b),max(b),sum(b))
 
 del b[1:2]
-print("b del b[1:2]:",b)
+print("after del b[1:2]:",b)
 
 b.clear()
-print("b clear:",b)
+print("after b.clear():",b)
 
 
 
@@ -78,8 +84,12 @@ print('마지막으로 list comprehension. 리스트 안에 for if 쓰기')
 print('a = [i for i in range(10)]')
 print('a :', [i for i in range(10)])
 
+print('a = [i for i in range(10)]')
+print('odd :', [i for i in range(10) if i%2 == 1])
+print('even :', [i for i in range(10) if i%2 == 0])
+
 print('a = [i * 2 for i in range(10)]')
-print('a :', [i *2 for i in range(10)])
+print('a :', [i*2 for i in range(10)])
 
 print('a = [i * 5 for i in range(10) if i % 2 == 1]')
 print('a :', [i * 5 for i in range(10) if i % 2 == 1])
