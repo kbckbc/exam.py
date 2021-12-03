@@ -4,23 +4,9 @@ import RPi.GPIO as GPIO
 import time
 import os
 
-GPIO.setmode(GPIO.BCM)  # set GPIO in BCM mode which
-GPIO.setwarnings(False)
-
 PIR_PIN = 23 # pin for PIR which is motion detector
 LED_PIN = 17 # pin for LED which shows PIR is working
 MIN_DISK = 100 # minimum disk space to record video in MB
-
-GPIO.setup(PIR_PIN,GPIO.IN)     # set 23 pin for PIR input
-GPIO.setup(LED_PIN,GPIO.OUT)    # set 17 pin for LEF output
-
-camera = PiCamera()             # Initial and create Pi camera
-
-startRecording = False          # toggle purpose for recording
-printOnce = True                # toggle purpose for debug printing
-
-filepath = '/home/pi/detector/recording_'
-fileext = '.h264'
 
 def getDiskSpace():
     st = os.statvfs(".")
@@ -28,7 +14,7 @@ def getDiskSpace():
 
 def checkEmptySpace():
     remainSpace = getDiskSpace()
-    print('Available space in Mega Bytes: ', remainSpace)
+    print('\nAvailable space in Mega Bytes: ', remainSpace)
 
     # if the disk space below MIN_DISK,
     # and then delete oldest file to free up the space
@@ -39,7 +25,24 @@ def checkEmptySpace():
         os.remove(os.path.abspath(oldest_file))
 
         remainSpace = getDiskSpace()
-        print('Available space in Mega Bytes: ',remainSpace)
+        print('\nAvailable space in Mega Bytes: ',remainSpace)
+
+
+# init
+startRecording = False          # toggle purpose for recording
+printOnce = True                # toggle purpose for debug printing
+
+filepath = '/home/pi/detector/recording_'
+fileext = '.h264'
+
+# initGPIO
+GPIO.setmode(GPIO.BCM)  # set GPIO in BCM mode which
+GPIO.setwarnings(False)
+GPIO.setup(PIR_PIN,GPIO.IN)     # set 23 pin for PIR input
+GPIO.setup(LED_PIN,GPIO.OUT)    # set 17 pin for LEF output
+
+# initCamera
+camera = PiCamera()             # Initial and create Pi camera
 
 GPIO.output(LED_PIN, False)     # before start turn off the LED
 try :
