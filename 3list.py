@@ -33,7 +33,7 @@ print()
 
 print('reverse는 list 순서 뒤집기. 역정렬아님')
 print('sort는 list 정렬')
-print('index는 list 안에서 search')
+print('index는 list 안에서 인덱스 순서를 찾아줌')
 print('마지막 요소에 접근은 -1 활용. 쓰기전에 list 있는지 부터 체크')
 print('min, max, sum 함수 사용 가능. list 메쏘드 아님주의!')
 print('del은 list 원하는곳 지우기. del 은 list 메쏘드 아님 주의!')

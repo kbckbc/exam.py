@@ -20,7 +20,7 @@ print('my_dict :', my_dict)
 print('\n다음과 같이 순환조회 가능')
 print('my_dict.items(): ', end='')
 for k, v in my_dict.items():
-    print('[',k,v, ']',end = ',')
+    print("{0}:{1} ".format(k, v), end='')
 print()
 
 print('my_dict.values(): ', end='')
@@ -37,8 +37,8 @@ print()
 print('\n키워드 분석')
 s = 'a,b,c,d,e,f,a,s,d,h,y,u,g,d,e,h,d,x,f,w,g,u,w,u'
 s = s.split(',')
-count1= {} # 결과 저장할 맵 정의
-count2= {} # 결과 저장할 맵 정의
+count1= {} # 결과 저장할 dict 정의
+count2= dict() # 결과 저장할 dict 정의
 
 # 이런 형태로 카운팅도 되고
 for k in s:
