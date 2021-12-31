@@ -5,7 +5,7 @@ print('+ 원문 그대로')
 print("  - a:{0}".format(a))
 
 print()
-print('+ a split.')
+print('+ b = a.split('|')')
 b = a.split('|')
 print("  - b:{0}".format(b))
 

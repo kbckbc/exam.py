@@ -18,8 +18,6 @@ print("입력받기: a, b = map(int, input('문자열 두 개 입력하세요').
 print()
 
 
-
-
 print("* 시퀀스 자료형: list, tuple, range, str")
 print("tuple, range, str 은 읽기 전용 시퀀스임. del 못 씀")
 print("특정 값 확인: 30 in [0,10,20,30]:", 30 in [0,10,20,30])
@@ -41,24 +39,3 @@ print("a[::] 는 전체 리스트를 가지고 옴", [0,1,2,3,4][::])
 print("a[::2] 는 전체 리스트 대상으로 2씩 증가하며 가져옴", [0,1,2,3,4][::2])
 print("a[::-1] 는 전체 리스트 역순으로 가져옴", [0,1,2,3,4][::-1])
 print()
-
-
-print("* 리스트")
-print("빈 리스트 생성:", "a = [] or b = list()")
-print("리스트 값은 타입이 달라도 가능:", "person=['james',17,175.3,True]", ['james',17,175.3,True])
-print("튜플은 읽기 전용 리스트라고 생각하면 됨, 괄호모양이 다름: a = (1,2,3,4,5)",(1,2,3,4,5))
-a = print("")
-print()
-
-
-print("* 딕셔너리: Hash 자료구조")
-print("빈 딕셔너리 생성:", "x = {} or y = dict()")
-print("딕셔너리 형태: {키1:값1, 키2:값2}")
-print("주의사항: 키와 값에 웬만한 자료구조가 다 올수 있고 섞어쓸 수 있음. 단 키에는 리스트와 딕서녀리 못 씀")
-a = {'health':490, 'mana':330, 'armor':18.72}; print(a)
-print("a['health']:", a['health'])
-print("딕셔너리 길이: len(" + str(a) + ")", len(a))
-print("딕셔너리 값 확인: 'health' in a:", 'health' in a)
-print("딕셔너리 값 확인: 'health' not in a:", 'health' not in a)
-print()
-
