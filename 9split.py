@@ -2,10 +2,11 @@ a='곽병찬,1,2|이연주,3,4|곽지성,5,6|곽채윤,7,8'
 
 print('\n')
 print('+ 원문 그대로')
-print("  - a:{0}".format(a))
+print("  - a:%s" % a)
 
 print()
-print('+ b = a.split('|')')
+print('파이프를 기준으로 split')
+print("+ b = a.split('|')")
 b = a.split('|')
 print("  - b:{0}".format(b))
 
@@ -13,9 +14,9 @@ print()
 print('+ b split. 다른변수 대입')
 c = list()
 d = list()
-for i in range(len(b)):
-    c.append(b[i].split(','))
-    d.extend(b[i].split(','))
+for z in b:
+    c.append(z.split(','))
+    d.extend(z.split(','))
 print("  - b:{0}".format(b))
 print("  - c.append(b[i].split(','):{0}".format(c))
 print("  - d.extend(b[i].split(','):{0}".format(d))

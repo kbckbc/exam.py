@@ -59,36 +59,34 @@ b.clear(); print("after b.clear():",b)
 print()
 print()
 
-print("+ 리스트 반복문")
-a = ["a","b","c","d","e"]
-for i in a:
-    print(i, end=' ')
-print()
-for i, v in enumerate(a):
-    print(i, v, end=',')
-print()
-print()
-print()
+
 
 
 print("+ 리스트 할당 복사")
+print("  - 리스트의 copy method 를 사용하면 list 의 주소값만 복사")
+print("  - copy.deepcopy 함수를 사용하면 list 의 값을 개별로 복사")
+
 a = [1,2,3]; b = [10,20,30]; b.append(a)
 print("a:", a, "b:", b)
+print()
 
+print("b 리스트를 copy method 를 써서 c 로 복사.")
 c = b.copy(); 
-print("before chage value in a: c = b.copy():", c)
+print("c = b.copy():", c)
 a[0] = a[0]*100
-print("after chage value in a: c = b.copy():", c)
+print("a[0] = a[0]*100 로 값 변경후 c:", c)
+print()
 
+print("b 리스트를 copy.deepcopy 함수를 써서 c 로 복사.")
 a = [1,2,3]; b = [10,20,30]; b.append(a)
 c = copy.deepcopy(b) 
-print("before chage value in a: c = copy.deepcopy(b):", c)
+print("c = b.deepcopy():", c)
 a[0] = a[0]*100
-print("after chage value in a: c = copy.deepcopy(b):", c)
+print("a[0] = a[0]*100 로 값 변경후 c:", c)
 print()
 print()
 
-print('+ List comprehension')
+print('+ List comprehension 이라는게 있음')
 print('리스트 안에 식, for문, if문을 사용하여 리스트를 생성하는 개념')
 
 print('a = [i for i in range(10)]')
