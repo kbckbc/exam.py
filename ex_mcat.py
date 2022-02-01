@@ -6,7 +6,6 @@
 #    -n : Number all output lines
 
 import sys
-from unittest import skip
 
 debug = False;
 
