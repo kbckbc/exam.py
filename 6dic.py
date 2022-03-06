@@ -1,3 +1,6 @@
+from warnings import catch_warnings
+
+
 print("+ 딕셔너리: {키1:값1, 키2:값2} 자료형, Java 의 Map과 동일")
 print("  - 주의사항: 키와 값에 웬만한 자료구조가 다 올수 있고 섞어쓸 수 있음. ")
 print('  - 단, key는 리스트와 딕서녀리 못 씀. 키는 변경 불가능이어야 함')
@@ -14,8 +17,14 @@ print()
 
 print('* dic for문')
 my_dict = {'한국':60, '일본':40, '중국':50}
-
 print("my_dict :", my_dict)
+print()
+
+if "없음" in my_dict:
+    print('Finding key for 없음:', 'Yes')
+else:
+    print('Finding key for 없음:', 'No')
+
 print("my_dict['한국']:", my_dict["한국"])
 print()
 print("after my_dict['베트남'] = 30"); my_dict['베트남'] = 30; print("my_dict :", my_dict)

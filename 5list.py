@@ -26,6 +26,7 @@ print()
 print()
 
 print('reverse는 list 순서 뒤집기. 역정렬아님')
+print('거꾸로 리스트 만들때 [::-1] 사용')
 print('sort는 list 정렬')
 print('index는 list 안에서 인덱스 순서를 찾아줌')
 print('마지막 요소에 접근은 -1 활용. 쓰기전에 list 있는지 부터 체크')
@@ -36,14 +37,15 @@ print()
 print()
 
 b = [3,2,4,1,5]
-print("b:",b)
-b.reverse(); print("after b.reverse:",b)
-b.sort(); print("after b.sort:",b)
+print("b:",b); b.reverse(); print("after b.reverse:",b)
+print("b:",b); print("after b[::-1]:",b[::-1])
+print("b:",b); b.sort(); print("after b.sort:",b)
 if not b: print("b 리스트 비었음")
 elif b: print("b 리스트 들어있음")
 # 리스트가 있는지 체크하고 -1 써야함
 if b: print("b b[-1]:",b[-1])
 
+print('리스트 요소의 인덱스 구하기')
 try:
     print("b index(1):",b.index(1))
     print("b index(5):",b.index(5))
@@ -60,30 +62,29 @@ print()
 print()
 
 
-
-
-print("+ 리스트 할당 복사")
-print("  - 리스트의 copy method 를 사용하면 list 의 주소값만 복사")
-print("  - copy.deepcopy 함수를 사용하면 list 의 값을 개별로 복사")
+print("+ 리스트 할당 vs 복사")
+print("  - 변수 할당은 메모리 주소만 복사함")
+print("  - 1차 리스트인 경우는 copy() 함수 혹은 [:] notation 사용")
+print("  - 2차 이상의 경우는 deepcopy() 함수 사용")
 
 a = [1,2,3]; b = [10,20,30]; b.append(a)
 print("a:", a, "b:", b)
 print()
 
-print("b 리스트를 copy method 를 써서 c 로 복사.")
 c = b.copy(); 
-print("c = b.copy():", c)
+d = b[:]
+e = copy.deepcopy(b)
 a[0] = a[0]*100
-print("a[0] = a[0]*100 로 값 변경후 c:", c)
-print()
-
-print("b 리스트를 copy.deepcopy 함수를 써서 c 로 복사.")
-a = [1,2,3]; b = [10,20,30]; b.append(a)
-c = copy.deepcopy(b) 
-print("c = b.deepcopy():", c)
-a[0] = a[0]*100
-print("a[0] = a[0]*100 로 값 변경후 c:", c)
-print()
+b[0] = 5
+print("b 리스트를 copy method 를 써서 c 로 복사.")
+print("b 리스트를 [:] 를 써서 d 로 복사.")
+print("b 리스트를 copy.deepcopy 함수를 써서 e 로 복사.")
+print("a[0] = a[0]*100, b[0] = 5 로 값 변경후")
+print('a:', a)
+print('b:', b)
+print('c:', c)
+print('d:', d)
+print('e:', e)
 print()
 
 print('+ List comprehension 이라는게 있음')
